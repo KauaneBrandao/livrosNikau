@@ -19,16 +19,15 @@ use App\http\Controllers\livrosController;
 Route::get('/', [livrosController::class,'index']);
 
 
-// rota  para a pagina contato
-Route::get('/contact', function () {
-    return view('contact');
+// rota  para a pagina galeria
+Route::get('/contato', function () {
+    return view('contato');
 });
 
-Route::get('/produtos', function () {
-      $busca = request('search');
-      return view('produtos', ['busca' => $busca]);
+Route::get('/login', function () {
+    return view('login');
 });
 
-Route::get('/produtos_teste/{id?}', function ($id = null) {
-    return view('products', ['id' => $id]);
+Route::get('/galeria', function () {
+    return view('galeria');
 });
