@@ -29,6 +29,9 @@
   </button>
 </div>
 
+
+<div class="parte1"><h1>Algumas opções que você pode gostar!</h1></div>
+
     <div class="card" style="width: 18rem;" id="exampleModal">
   <img src="../img/tronodevidro.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -41,10 +44,10 @@
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="../img/harrypotter.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">Harry Potter: E o prisioneiro de Azkaban</h5>
+    <p class="card-text">R$50,00</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
