@@ -3,7 +3,10 @@
 @section('title','Livros Nikau')
 
 @section('content')
-<form class="row g-3">
+
+<link rel="stylesheet" href="{{ asset ('css/login.css') }}">
+
+<form class="row g-3" #>
   <div class="col-md-12">
     <label for="inputEmail4" class="form-label">Nome:</label>
     <input type="Nome" class="form-control" id="inputNome6">

@@ -1,0 +1,123 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #cecece;
+}
+
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    padding: 70px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    background: rgba(177, 253, 243, 0.582);
+}
+.form-wrapper h2 {
+    color: #3d7774da;
+    font-size: 2rem;
+    text-align: center;
+}
+.form-wrapper h3 {
+    color: #363636;
+    font-size: 15px;
+}
+
+.form-wrapper form {
+    margin: 25px 0 65px;
+}
+
+form .form-control {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+    background:#ffffff;
+    border: none;
+}
+
+.form-control input {
+    height: 100%;
+    width: 100%;
+    background:#ffffff; ;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 1rem;
+    padding: 0 10px;
+    bottom: 3px;
+    
+}
+
+.form-control input:is(:focus, :valid ) {
+    background:#ffffff;
+    padding: 16px 20px 0;
+}
+
+.form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #1d1d1d;
+    transition: all 0.1s ease;
+}
+
+.form-control input:is(:focus, :valid )~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 15pt;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    letter-spacing: 1px;
+}
+
+form button:hover {
+    background:#ffffff ;
+}
+
+.botao {
+    background-color: rgb(182, 224, 211);
+
+}
+
+.form-wrapper a {
+    text-decoration: none;
+}
+
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.form-wrapper :where(label, p, small, a) {
+    color: #494949;
+}
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .lembrar-de-mim {
+    display: flex;
+}
+
+form .lembrar-de-mim input {
+    margin-right: 5px;
+}
+

@@ -3,72 +3,44 @@
 @section('title','Livros Nikau')
 
 @section('content')
-<body>
+
+<link rel="stylesheet" href="{{ asset ('css/login.css') }}">
+
+<div>
+
+<form class="d-flex mt-3" role="search" id="arere">
+
 <div class="form-wrapper">
     
-    <h1>Faça seu Cadastro</h1>
-    <h3>Para adicionar esse item ao seu carrinho crie uma conta na Nikau!</h3>
+    <h1>Descubra mais!</h1>
+    <h3>Para adicionar esse item ao seu carrinho, entre na sua conta Nikau!</h3>
     <form action="#">
 
-    <div class="inputs">
-    <div class="row">
+        <div class="form-control">         
+            <input type="text" required>
+            <label class="dentro" for="Email ou número de telefone">Email ou número de telefone</label>
+        </div>
+
+        <div class="form-control">
+            <input type="password" required>
+            <label class="dentro" for="Senha">Senha</label>
+        </div>
+
+        <button type="submit" class="botao">Entrar</button>
+
+        <h2 class="primeiravez">Primeira vez aqui?</h2>
+        </form>
         
-        <div class="col-md-6">
+        <a href="cadastro.php"><button type="submit" class="botaoCadastro">Cadastrar</button></a>
 
-            <div class="form-group">
-                <input type="text" class="form-control" id="Nome" required>
-                <label for="Nome" class="nomezinho">Nome </label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="Sobrenome"  required>
-                <label for="Sobrenome" class="nomezinho">Sobrenome</label>
-            </div>
-        </div>
-
-        <div class="w-100 d-none d-md-block"></div>
-        
-
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="Telefone"  required>
-                <label for="Telefone" >Telefone</label>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="Email"  required>
-                <label for="Email">Email</label>
-            </div>
-        </div>
-
-
-        <div class="w-100 d-none d-md-block"></div>
-        
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="cpf" data-mask="000.000.000-00"  required>
-                <label for="cpf" >CPF</label>
-            </div>
-        </div>
-
-    
-
-
-
-    </div>
-</div>
-
-
-        <a href=""><button type="submit" class="botaoCadastro">Cadastrar</button></a>
         <div class="form-help">
             <div class="lembrar-de-mim ">
                 <input type="checkbox" id="lembrar-de-mim">
                 <label for="lembrar-de-mim">Lembrar de mim</label>
-            <!-- </div>
+            </div>
             <a href="#">Precisa de ajuda?</a>
-        </div> -->
+        </div>
     </form>
-@endsection
+
+    </form>
+    @endsection
