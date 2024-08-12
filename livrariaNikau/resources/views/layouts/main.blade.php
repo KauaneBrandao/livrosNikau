@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,17 +27,11 @@
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/" class="nav-link">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/admins/admin" class="nav-link">admin</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/events/create" class="nav-link">Criar Eventos</a>
+                    <a href="/galeria" class="nav-link">Livros</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="/dashboard" class="nav-link">Meus eventos</a>
+                    <a href="/dashboard" class="nav-link">Meu Carrinho</a>
                 </li> 
 
           <form action="/logout" method="POST">
@@ -60,7 +53,10 @@
             </ul>
             </div>
         </nav>
+
     </header>
+
+
         <main>
             <div class="container-fluid">
                 <div class="row">
@@ -69,7 +65,7 @@
             </div>
         </main>
         <footer>
-                <p>DC Events &copy; 2024</p>
+                <p>Livros Nikau &copy; 2024</p>
         </footer>
 
 
