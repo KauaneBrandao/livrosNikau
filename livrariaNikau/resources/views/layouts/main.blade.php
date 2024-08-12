@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- CSS da aplicação -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/styles.css">
     <script src="/js/scripts.js"></script>
 
  <title> @yield('title') </title>
@@ -20,7 +20,7 @@
 
 <body>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="../img/Nikau.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,27 +33,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="/dashboard" class="nav-link">Meu Carrinho</a>
+                    <a href="/dashboard" class="nav-link">Contato</a>
                 </li> 
 
-          <form action="/logout" method="POST">
-
-                    <a href="/logout" class="nav-link"
-                    onclick="event.preventDefault();
-                    this.closest('form').submit();">
-                    Sair
-                </a>
-                </form>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-                    <a href="/register" class="nav-link">Cadastrar</a>
+              <li class="nav-item">
+                    <a href="/register" class="nav-link">Minha conta</a>
                 </li>
 
             </ul>
             </div>
+            
         </nav>
 
     </header>
