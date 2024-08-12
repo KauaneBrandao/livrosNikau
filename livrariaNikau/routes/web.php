@@ -28,6 +28,8 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/galeria', function () {
-    return view('galeria');
+Route::get('/welcome', function () {
+    return view('welcome');
 });
+
+
