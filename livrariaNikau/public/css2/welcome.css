@@ -1,5 +1,101 @@
-.card {
-    margin-top: 10vh;
-    margin-left: 10vh;
 
+.imagem {
+    position: absolute;
+}
+
+.imagem img {
+    width: 2200px;
+    
+}
+
+.parte1 {
+    margin-top: 8vh;
+    margin-left: 8vh;
+}
+
+.parte1 h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.principal1 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    
+}
+
+
+.pt {
+    background-color: rgb(161, 125, 84);
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    margin-top: 800px;
+    border-radius: 30px;
+    box-shadow: 5px;
+    transition: 0.9s;
+
+}
+
+.pt:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 10vh;
+    font-size: 50px;
+    color: rgb(37, 26, 12);
+    text-align: center;
+}
+
+.icon {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.icon i{
+    flex-direction: row;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 3vh;
+    color:  rgb(242, 233, 221);
+}
+
+.desc {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7px;
+    color: rgb(242, 233, 221);
+}
+
+.desc h4 {
+    flex-direction: row;
+    text-align: center;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(242, 233, 221);
+    
+}
+
+.cardprincipal {
+    margin-top: 8vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 500px;
+    height: 400px;
 }
