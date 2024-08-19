@@ -16,7 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    
+    display: flex;
     position: relative;
     background-color: rgba(57, 38, 15, 0.934);
 }
@@ -41,10 +41,13 @@ body {
     font-weight: 800;
     font-style: normal;
     color: antiquewhite;
+    flex-direction: row;
+    display: flex;
 }
 
 .nikau {
     margin-left: 5vh;
+    flex-direction: row;
 }
 
 .titleNav {
@@ -54,3 +57,122 @@ body {
     padding: 20px;
 }
 
+.search {
+    justify-content: end;
+    align-items: end;
+    display: flex;
+}
+
+form {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+button i {
+    color: antiquewhite;
+    font-size: 50px;
+}
+
+.itens {
+    display: flex;
+    flex-direction: row;
+}
+
+form input {
+    background-color: transparent;
+}
+
+.icone {
+    color: antiquewhite;
+}
+.carousel-inner {
+    display: flex;
+    flex-direction: row
+}
+
+.carousel-item {
+    flex-direction: column;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+.carrossel {
+    flex-direction: column;
+}
+
+.page-footer {
+    margin-top: 400px;
+    height: 300px;
+    justify-content: space-evenly;
+    color: antiquewhite;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    background-color: rgb(35, 29, 6);
+}
+h2 {
+    color: beige;
+    color: antiquewhite;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+ 
+.col {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.links a {
+    color:antiquewhite ;
+     font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.links {
+    color:antiquewhite ;
+     font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.iconess img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.iconess1 img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-copyright {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}

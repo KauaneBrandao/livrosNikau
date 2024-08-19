@@ -1,0 +1,62 @@
+body {
+    background-image: url(../img/livros25.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#formulario {
+    background-color:  rgba(32, 16, 1, 0.895);
+    height: 700px;
+    width: 600px;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+}
+
+#coisas {
+    margin-top: 20px;
+}
+
+.botao {
+    background-color: antiquewhite ;
+    color: rgb(34, 24, 0) ;
+    font-family: "Poppins", sans-serif;
+    border-radius: 30px;
+    border-color: rgb(34, 24, 0);
+    font-weight: 600;
+    font-style: normal;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-left: 20%;
+    margin-top: 20%;
+
+
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: rgb(34, 24, 0);
+    color: antiquewhite;
+    border-color: antiquewhite;
+    font-weight: 600;
+    font-style: normal;
+}

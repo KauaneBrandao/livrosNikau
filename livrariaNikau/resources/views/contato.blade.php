@@ -4,10 +4,19 @@
 
 @section('content')
 
-<link rel="stylesheet" href="{{ asset ('css/login.css') }}">
+<link rel="stylesheet" href="{{ ('css2/contato.css') }}">
+<link rel="stylesheet" href="{{ ('css2/styles.css') }}">
+
+
+
+
 
 <form class="row g-3" #>
+ 
+<div id="formulario">
   <div class="col-md-12">
+  <div class="titulo"><h2>Fale Conosco!</h2></div>
+   <div id="coisas">
     <label for="inputEmail4" class="form-label">Nome:</label>
     <input type="Nome" class="form-control" id="inputNome6">
   </div>
@@ -17,7 +26,10 @@
   </div>
   <div class="col-12">
     <label for="inputMensagem" class="form-label">Mensagem:</label>
-    <input type="text" class="form-control" id="inputMensagem" placeholder="1234 Main St">
+  </div>
+
+  <div  class="col-12">
+  <textarea name="Mensagem" id=""></textarea>
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">Motivo do contato:</label>
@@ -36,10 +48,16 @@
       <label class="form-check-label" for="gridCheck">
         Check me out
       </label>
+      </div>
     </div>
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    
+    <button type="submit" class="botao">Enviar</button>
+   
+  </div>
   </div>
 </form>
+
+
 @endsection
