@@ -11,6 +11,7 @@ body {
     width: 600px;
     border-radius: 30px;
     padding: 50px;
+ ;
 }
 
 input {
@@ -33,7 +34,7 @@ input {
     width: 60%;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 80%;
     margin-left: 20%;
     margin-top: 20%;
 
@@ -43,6 +44,9 @@ input {
 button {
     justify-content: center;
     align-items: center;
+    width: 40%;
+    height: 25%;
+    display: flex;
 }
 
 label {
@@ -59,4 +63,13 @@ label {
     border-color: antiquewhite;
     font-weight: 600;
     font-style: normal;
+}
+
+.crescer select {
+    width: 150%;
+}
+
+.crescer textarea {
+    width: 100%;
+
 }

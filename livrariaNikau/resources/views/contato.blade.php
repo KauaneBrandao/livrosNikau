@@ -29,9 +29,13 @@
   </div>
 
   <div  class="col-12">
+    <div class="crescer">
   <textarea name="Mensagem" id=""></textarea>
   </div>
+
+  </div>
   <div class="col-md-4">
+   <div class="crescer">
     <label for="inputState" class="form-label">Motivo do contato:</label>
     <select id="inputState" class="form-select">
       <option selected>Não recebi o livro</option>
@@ -41,6 +45,7 @@
       <option>aaaaaaaaaaa</option>
       <option>aaaaaaaaaaa</option>
     </select>
+    </div>
   </div>
   <div class="col-12">
     <div class="form-check">

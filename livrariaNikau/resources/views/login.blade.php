@@ -4,43 +4,60 @@
 
 @section('content')
 
-<link rel="stylesheet" href="{{ asset ('css/login.css') }}">
+<link rel="stylesheet" href="{{ ('css2/login.css') }}">
+<link rel="stylesheet" href="{{ ('css2/styles.css') }}">
+
+
 
 <div>
 
+
+<div class="tudoform">
 <form class="d-flex mt-3" role="search" id="arere">
+
+
 
 <div class="form-wrapper">
     
+    <div class="titulo">
     <h1>Descubra mais!</h1>
-    <h3>Para adicionar esse item ao seu carrinho, entre na sua conta Nikau!</h3>
+   
+    <h3>Para realizar essa ação, entre na sua conta Nikau!</h3>
+    </div>
     <form action="#">
 
         <div class="form-control">         
+           
+            <label class="textinho" for="Email ou número de telefone">Email ou número de telefone</label>
             <input type="text" required>
-            <label class="dentro" for="Email ou número de telefone">Email ou número de telefone</label>
         </div>
 
         <div class="form-control">
+        
+            <label class="textinho" for="Senha">Senha</label>
             <input type="password" required>
-            <label class="dentro" for="Senha">Senha</label>
         </div>
 
+        <div class="botaogeral">
         <button type="submit" class="botao">Entrar</button>
+        </div>
 
-        <h2 class="primeiravez">Primeira vez aqui?</h2>
+        <div class="primeiravez">
+            <h2 class="primeiravez">Primeira vez aqui?</h2>
+        </div>
         </form>
         
+        <div class="botaogeral">
         <a href="cadastro.php"><button type="submit" class="botaoCadastro">Cadastrar</button></a>
-
+        </div>
         <div class="form-help">
             <div class="lembrar-de-mim ">
                 <input type="checkbox" id="lembrar-de-mim">
-                <label for="lembrar-de-mim">Lembrar de mim</label>
+                <label for="lembrar-de-mim"><p class="vtnc">Lembrar de mim</p></label>
             </div>
-            <a href="#">Precisa de ajuda?</a>
         </div>
     </form>
 
     </form>
+    </div>
     @endsection
