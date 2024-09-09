@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CadastroController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 // importação do controller events
 use App\http\Controllers\livrosController;
+use App\Models\Cadastro;
 
-Route::get('/', [livrosController::class,'index']);
-
+Route::get('/', [CadastroController::class,'insert']);
 
 // rota  para a pagina galeria
 Route::get('/contato', function () {

@@ -3,73 +3,96 @@
 @section('title','Livros Nikau')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset ('css/login.css') }}">
 
-<div class="form-wrapper" id="formulario">
-    
-    <h1>Faça seu Cadastro</h1>
-    <h3>Para adicionar esse item ao seu carrinho crie uma conta na Nikau!</h3>
-    <form action="#">
+<link rel="stylesheet" href="{{ ('css/cadastro.css') }}">
+<link rel="stylesheet" href="{{ ('css2/styles.css') }}">
 
-    <div class="inputs">
-    <div class="row">
-        
-        <div class="col-md-6">
-
-            <div class="form-group">
-                <input type="text" class="form-control" id="Nome" required>
-                <label for="Nome" class="nomezinho">Nome </label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="Sobrenome"  required>
-                <label for="Sobrenome" class="nomezinho">Sobrenome</label>
-            </div>
-        </div>
-
-        <div class="w-100 d-none d-md-block"></div>
-        
-
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="Telefone"  required>
-                <label for="Telefone" >Telefone</label>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="Email"  required>
-                <label for="Email">Email</label>
-            </div>
-        </div>
-
-
-        <div class="w-100 d-none d-md-block"></div>
-        
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="cpf" data-mask="000.000.000-00"  required>
-                <label for="cpf" >CPF</label>
-            </div>
-        </div>
-
-    
+<div>
 
 
 
-    </div>
-</div>
+    <!--Aqui adicionar a validação e mensagem -->
+
+    @if($errors->any())
+
+    <span class="erro">
+
+        @foreach ($errors->all() as $error)
+
+        {{$error}}<br>
+
+        @endforeach
+
+    </span>
+
+    @endif
 
 
-        <a href=""><button type="submit" class="botaoCadastro">Cadastrar</button></a>
-        <div class="form-help">
-            <div class="lembrar-de-mim ">
-                <input type="checkbox" id="lembrar-de-mim">
-                <label for="lembrar-de-mim">Lembrar de mim</label>
-            <!-- </div>
-            <a href="#">Precisa de ajuda?</a>
-        </div> -->
+    </span>
+
+    <!--Informar no cadastro o nome do grupo de metodos -->
+    <form method="POST" action="{{ route('form.insert') }}">
+        @csrf
+
+        <div class="tudoform">
+            <form class="d-flex mt-3" role="search" id="arere">
+
+
+
+                <div class="form-wrapper">
+
+                    <div class="titulo">
+                        <h1>Cadastre-se!</h1>
+
+                        <h3>Crie agora sua conta Nikau!</h3>
+                    </div>
+                    <form action="#">
+                        <div class="form-control">
+
+                            <label class="textinho">nome</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="form-control">
+
+                            <label class="textinho" for="Email ou número de telefone">Email ou número de telefone</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="form-control">
+
+                            <label for="datanascimento" class="textinho">Data de Nascimento</label>
+                            <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento">
+                        </div>
+
+                        <div class="form-control">
+
+                            <label class="textinho" for="Senha">Senha</label>
+                            <input type="password" required>
+                        </div>
+
+                        <div class="botaogeral">
+                            <button type="submit" class="botao">Entrar</button>
+                        </div>
+
+                        <div class="primeiravez">
+                            <h2 class="primeiravez">Primeira vez aqui?</h2>
+                        </div>
+                    </form>
+
+                    <div class="botaogeral">
+                        <a href="cadastro.php"><button type="submit" class="botaoCadastro">Cadastrar</button></a>
+                    </div>
+                    <div class="form-help">
+                        <div class="lembrar-de-mim ">
+                            <input type="checkbox" id="lembrar-de-mim">
+                            <label for="lembrar-de-mim">
+                                <p class="vtnc">Lembrar de mim</p>
+                            </label>
+                        </div>
+                    </div>
+            </form>
+
     </form>
+</div>
 @endsection

@@ -52,7 +52,7 @@
           <a class="nav-link" href="../contato">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Minha Conta</a>
+          <a class="nav-link" href="../cadastro">Minha Conta</a>
         </li>
         </div>
 
